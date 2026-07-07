@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tun-Tun-Tun Sahur — барбершоп</title>
+<meta name="description" content="Tun-Tun-Tun Sahur — преміальний барбершоп. Стрижки, бороди, ритуал догляду." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo">Tun-Tun-Tun<span>Sahur</span></a>
+    <nav class="nav-links">
+      <a href="#services">Послуги</a>
+      <a href="#masters">Майстри</a>
+      <a href="#reviews">Відгуки</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+    <button class="btn btn-accent hoverable" onclick="openBooking()">Записатися</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-bg" data-parallax></div>
+    <div class="container hero-inner">
+      <p class="eyebrow reveal">Барбершоп · Київ</p>
+      <h1 class="hero-title reveal">
+        <span>Tun-Tun-Tun</span>
+        <span class="accent-text">Sahur</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Ритуал, а не послуга. Ми стрижемо повільно, точно й з увагою до
+        кожної деталі — так, як має бути в місці, якому довіряють обличчя.
+      </p>
+      <div class="hero-cta reveal">
+        <button class="btn btn-accent hoverable" onclick="openBooking()">Записатися</button>
+        <a href="#services" class="btn btn-ghost hoverable">Переглянути послуги</a>
+      </div>
+    </div>
+    <div class="scroll-hint reveal">
+      <span></span>
+      <p>Гортайте</p>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about" id="about">
+    <div class="container about-grid">
+      <div class="about-image reveal">
+        <div class="placeholder-box">Зображення</div>
+      </div>
+      <div class="about-text reveal">
+        <p class="eyebrow">Про нас</p>
+        <h2>Простір, де час сповільнюється</h2>
+        <p class="body-text">
+          Tun-Tun-Tun Sahur — це не про швидку стрижку між справами. Це
+          простір, де крісло, дзеркало й тиша працюють разом, щоб на сорок
+          хвилин ти міг просто видихнути. Наші майстри навчались роками,
+          і кожен рух — усвідомлений.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Прайс</p>
+        <h2>Послуги</h2>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-top">
+            <h3>Класична стрижка</h3>
+            <span class="mono">40 хв</span>
+          </div>
+          <p class="body-text">Машинка та ножиці, миття голови, укладка.</p>
+          <p class="price mono">450 грн</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-top">
+            <h3>Стрижка + борода</h3>
+            <span class="mono">65 хв</span>
+          </div>
+          <p class="body-text">Повний комплекс з оформленням бороди та гарячим рушником.</p>
+          <p class="price mono">700 грн</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-top">
+            <h3>Королівське гоління</h3>
+            <span class="mono">45 хв</span>
+          </div>
+          <p class="body-text">Гаряче гоління небезпечною бритвою, гарячий і холодний рушники.</p>
+          <p class="price mono">500 грн</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-top">
+            <h3>Дитяча стрижка</h3>
+            <span class="mono">30 хв</span>
+          </div>
+          <p class="body-text">Для клієнтів до 12 років, у спокійному темпі.</p>
+          <p class="price mono">300 грн</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-top">
+            <h3>Оформлення бороди</h3>
+            <span class="mono">30 хв</span>
+          </div>
+          <p class="body-text">Форма, тример, бритва, догляд олією.</p>
+          <p class="price mono">350 грн</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-top">
+            <h3>Комплекс</h3>
+            <span class="mono">80 хв</span>
+          </div>
+          <p class="body-text">Стрижка, борода, гоління скроней, укладка.</p>
+          <p class="price mono">900 грн</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ADVANTAGES ============ -->
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Чому ми</p>
+        <h2>Переваги</h2>
+      </div>
+      <div class="advantages-grid">
+        <div class="advantage-card reveal">
+          <p class="advantage-num mono" data-count="12">0</p>
+          <p class="advantage-label">років досвіду команди</p>
+        </div>
+        <div class="advantage-card reveal">
+          <p class="advantage-num mono" data-count="8400">0</p>
+          <p class="advantage-label">задоволених клієнтів</p>
+        </div>
+        <div class="advantage-card reveal">
+          <p class="advantage-num mono" data-count="3">0</p>
+          <p class="advantage-label">майстри вищої категорії</p>
+        </div>
+        <div class="advantage-card reveal">
+          <p class="advantage-num mono" data-count="98">0</p>
+          <p class="advantage-label">% клієнтів повертаються</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MASTERS ============ -->
+  <section class="masters" id="masters">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Команда</p>
+        <h2>Майстри</h2>
+      </div>
+      <div class="masters-grid">
+        <div class="master-card reveal">
+          <div class="placeholder-box square">Зображення</div>
+          <h3>Олександр</h3>
+          <p class="body-text">Класика та фейд</p>
+        </div>
+        <div class="master-card reveal">
+          <div class="placeholder-box square">Зображення</div>
+          <h3>Максим</h3>
+          <p class="body-text">Бороди та гоління</p>
+        </div>
+        <div class="master-card reveal">
+          <div class="placeholder-box square">Зображення</div>
+          <h3>Дмитро</h3>
+          <p class="body-text">Дитячі стрижки</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Відгуки</p>
+        <h2>Що кажуть клієнти</h2>
+      </div>
+      <div class="reviews-grid">
+        <blockquote class="review-card reveal">
+          <p class="body-text">"Перший раз, коли після стрижки не хочеться нічого поправляти вдома. Все продумано."</p>
+          <cite class="mono">— Ігор</cite>
+        </blockquote>
+        <blockquote class="review-card reveal">
+          <p class="body-text">"Атмосфера як в хорошому готелі. Кава, тиша, і майстер, який не поспішає."</p>
+          <cite class="mono">— Андрій</cite>
+        </blockquote>
+        <blockquote class="review-card reveal">
+          <p class="body-text">"Записуюсь тільки сюди вже два роки. Борода нарешті виглядає так, як я хотів."</p>
+          <cite class="mono">— Роман</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta" id="contacts">
+    <div class="container final-cta-inner reveal">
+      <h2>Готові до перетворення?</h2>
+      <p class="body-text">Запишіться сьогодні — і відчуйте різницю з першого візиту.</p>
+      <button class="btn btn-accent hoverable" onclick="openBooking()">Записатися</button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="logo footer-logo">Tun-Tun-Tun<span>Sahur</span></p>
+      <p class="body-text muted">Преміальний барбершоп у Києві.</p>
+    </div>
+    <div>
+      <p class="footer-title mono">Контакти</p>
+      <p class="body-text">вул. Прикладна, 1, Київ</p>
+      <p class="body-text">+380 00 000 00 00</p>
+    </div>
+    <div>
+      <p class="footer-title mono">Графік</p>
+      <p class="body-text">Пн–Пт: 10:00–20:00</p>
+      <p class="body-text">Сб: 11:00–19:00 · Нд: вихідний</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span class="mono">© <span id="year"></span> Tun-Tun-Tun Sahur</span>
+  </div>
+</footer>
+
+<!-- ============================================================
+     BOOKING MODAL / WIZARD
+     ============================================================ -->
+<div class="booking-overlay" id="bookingOverlay">
+  <div class="booking-card">
+    <div class="booking-head">
+      <h2 id="bookingTitle">Оберіть послугу</h2>
+      <button class="booking-close hoverable" onclick="closeBooking()">✕</button>
+    </div>
+
+    <div class="booking-progress">
+      <span data-dot></span><span data-dot></span><span data-dot></span><span data-dot></span><span data-dot></span>
+    </div>
+
+    <div class="booking-body">
+
+      <!-- Step 1: service -->
+      <div class="booking-step active" data-step="1">
+        <div class="option-list" id="serviceList"></div>
+      </div>
+
+      <!-- Step 2: master -->
+      <div class="booking-step" data-step="2">
+        <div class="master-select-grid" id="masterList"></div>
+      </div>
+
+      <!-- Step 3: calendar -->
+      <div class="booking-step" data-step="3">
+        <div class="calendar-nav">
+          <button class="cal-arrow hoverable" onclick="shiftMonth(-1)">‹</button>
+          <p class="calendar-month mono" id="calendarMonth"></p>
+          <button class="cal-arrow hoverable" onclick="shiftMonth(1)">›</button>
+        </div>
+        <div class="calendar-weekdays mono" id="calendarWeekdays"></div>
+        <div class="calendar-grid" id="calendarGrid"></div>
+      </div>
+
+      <!-- Step 4: time -->
+      <div class="booking-step" data-step="4">
+        <div class="time-grid" id="timeList"></div>
+      </div>
+
+      <!-- Step 5: contact -->
+      <div class="booking-step" data-step="5">
+        <div class="booking-summary mono" id="bookingSummary"></div>
+        <div class="field">
+          <label>Ім'я</label>
+          <input type="text" id="fFirstName" placeholder="Ім'я" />
+        </div>
+        <div class="field">
+          <label>Прізвище</label>
+          <input type="text" id="fLastName" placeholder="Прізвище" />
+        </div>
+        <div class="field">
+          <label>Телефон</label>
+          <input type="tel" id="fPhone" placeholder="+380" />
+        </div>
+        <p class="booking-msg" id="bookingMsg"></p>
+      </div>
+
+      <!-- Step 6: success -->
+      <div class="booking-step" data-step="6">
+        <div class="booking-success">
+          <div class="success-mark">✓</div>
+          <h3>Ви записані</h3>
+          <p class="booking-summary mono" id="bookingSummaryFinal"></p>
+          <p class="body-text muted">Чекаємо на вас у Tun-Tun-Tun Sahur.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="booking-actions" id="bookingActions"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
