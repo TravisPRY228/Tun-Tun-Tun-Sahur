@@ -23,9 +23,23 @@
       <a href="#services">Послуги</a>
       <a href="#masters">Майстри</a>
       <a href="#reviews">Відгуки</a>
+      <a href="#location">Локація</a>
       <a href="#contacts">Контакти</a>
     </nav>
-    <button class="btn btn-accent hoverable" onclick="openBooking()">Записатися</button>
+    <div class="header-right">
+      <div class="social-row header-social">
+        <a href="https://www.tiktok.com" target="_blank" rel="noopener" class="social-btn hoverable" aria-label="TikTok">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M16.6 5.82c-.9-.98-1.4-2.25-1.4-3.6h-3.2v13.9c0 1.62-1.32 2.94-2.94 2.94a2.94 2.94 0 0 1 0-5.88c.28 0 .55.04.8.11V9.9a6.3 6.3 0 0 0-.8-.05A6.15 6.15 0 0 0 3 16.02a6.15 6.15 0 0 0 6.06 6.15A6.15 6.15 0 0 0 15.2 16V9.1a8.3 8.3 0 0 0 4.8 1.53V7.42a5 5 0 0 1-3.4-1.6z"/></svg>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener" class="social-btn hoverable" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.97.24 2.43.4a4.9 4.9 0 0 1 1.77 1.15c.5.5.85 1.06 1.15 1.77.16.46.35 1.26.4 2.43.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.97-.4 2.43a4.9 4.9 0 0 1-1.15 1.77c-.5.5-1.06.85-1.77 1.15-.46.16-1.26.35-2.43.4-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.97-.24-2.43-.4a4.9 4.9 0 0 1-1.77-1.15 4.9 4.9 0 0 1-1.15-1.77c-.16-.46-.35-1.26-.4-2.43C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.24-1.97.4-2.43a4.9 4.9 0 0 1 1.15-1.77A4.9 4.9 0 0 1 5.59 1.8c.46-.16 1.26-.35 2.43-.4C9.29 1.34 9.67 1.33 12 1.33m0-1.33C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56a6.9 6.9 0 0 0-2.5 1.63A6.9 6.9 0 0 0 .01 4.76C-.29 5.52-.49 6.39-.55 7.67-.61 8.95-.62 9.36-.62 12.62s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.32.79.75 1.46 1.63 2.5a6.9 6.9 0 0 0 2.5 1.63c.76.3 1.63.5 2.91.56 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56a6.9 6.9 0 0 0 2.5-1.63 6.9 6.9 0 0 0 1.63-2.5c.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91a6.9 6.9 0 0 0-1.63-2.5A6.9 6.9 0 0 0 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0z"/><path d="M12 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zm0 10.16A4 4 0 1 1 16 12a4 4 0 0 1-4 4zM18.4 4.6a1.44 1.44 0 1 0 1.44 1.44A1.44 1.44 0 0 0 18.4 4.6z"/></svg>
+        </a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener" class="social-btn hoverable" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6z"/></svg>
+        </a>
+      </div>
+      <button class="btn btn-accent hoverable" onclick="openBooking()">Записатися</button>
+    </div>
   </div>
 </header>
 
@@ -59,7 +73,7 @@
   <section class="about" id="about">
     <div class="container about-grid">
       <div class="about-image reveal">
-        <div class="placeholder-box">Зображення</div>
+        <img class="photo" src="images/interior.jpg" alt="Інтер'єр барбершопу" loading="lazy" />
       </div>
       <div class="about-text reveal">
         <p class="eyebrow">Про нас</p>
@@ -171,17 +185,17 @@
       </div>
       <div class="masters-grid">
         <div class="master-card reveal">
-          <div class="placeholder-box square">Зображення</div>
+          <img class="photo square" src="images/master-oleksandr.jpg" alt="Олександр — майстер" loading="lazy" />
           <h3>Олександр</h3>
           <p class="body-text">Класика та фейд</p>
         </div>
         <div class="master-card reveal">
-          <div class="placeholder-box square">Зображення</div>
+          <img class="photo square" src="images/master-maksym.jpg" alt="Максим — майстер" loading="lazy" />
           <h3>Максим</h3>
           <p class="body-text">Бороди та гоління</p>
         </div>
         <div class="master-card reveal">
-          <div class="placeholder-box square">Зображення</div>
+          <img class="photo square" src="images/master-dmytro.jpg" alt="Дмитро — майстер" loading="lazy" />
           <h3>Дмитро</h3>
           <p class="body-text">Дитячі стрижки</p>
         </div>
@@ -222,6 +236,47 @@
     </div>
   </section>
 
+  <!-- ============ LOCATION ============ -->
+  <section class="location" id="location">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Як нас знайти</p>
+        <h2>Локація</h2>
+      </div>
+      <div class="location-grid reveal">
+        <div class="map-wrap">
+          <iframe
+            class="map-frame"
+            src="https://maps.google.com/maps?q=%D0%A5%D1%80%D0%B5%D1%89%D0%B0%D1%82%D0%B8%D0%BA%2022%2C%20%D0%9A%D0%B8%D1%97%D0%B2&z=15&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Карта розташування Tun-Tun-Tun Sahur"
+          ></iframe>
+        </div>
+        <div class="location-info">
+          <div class="info-block">
+            <p class="footer-title mono">Адреса</p>
+            <p class="body-text">вул. Хрещатик, 22, Київ, 01001</p>
+          </div>
+          <div class="info-block">
+            <p class="footer-title mono">Телефони</p>
+            <p class="body-text"><a href="tel:+380441234567" class="hoverable">+380 44 123 45 67</a></p>
+            <p class="body-text"><a href="tel:+380671234567" class="hoverable">+380 67 123 45 67</a></p>
+          </div>
+          <div class="info-block">
+            <p class="footer-title mono">Пошта</p>
+            <p class="body-text"><a href="mailto:hello@tuntuntunsahur.com" class="hoverable">hello@tuntuntunsahur.com</a></p>
+          </div>
+          <div class="info-block">
+            <p class="footer-title mono">Графік</p>
+            <p class="body-text">Пн–Пт: 10:00–20:00</p>
+            <p class="body-text">Сб: 11:00–19:00 · Нд: вихідний</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
@@ -232,8 +287,8 @@
     </div>
     <div>
       <p class="footer-title mono">Контакти</p>
-      <p class="body-text">вул. Прикладна, 1, Київ</p>
-      <p class="body-text">+380 00 000 00 00</p>
+      <p class="body-text">вул. Хрещатик, 22, Київ</p>
+      <p class="body-text">+380 44 123 45 67</p>
     </div>
     <div>
       <p class="footer-title mono">Графік</p>
