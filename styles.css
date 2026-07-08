@@ -166,9 +166,11 @@ section { padding: 140px 0; }
   height: 64px;
 }
 .header-right { display: flex; align-items: center; gap: 14px; }
-@media (max-width: 400px) {
-  .header-right { gap: 8px; }
-  .social-btn { width: 32px; height: 32px; }
+
+@media (max-width: 680px) {
+  .header-social { display: none; }
+  .logo { font-size: 15px; }
+  .btn.btn-accent { padding: 11px 20px; font-size: 13px; }
 }
 .logo {
   font-family: var(--font-display);
@@ -684,6 +686,10 @@ section { padding: 140px 0; }
    SOCIAL ICONS
    ============================================================ */
 .social-row { display: flex; gap: 10px; }
+.mobile-social-row { display: none; justify-content: center; margin-top: 32px; }
+@media (max-width: 680px) {
+  .mobile-social-row { display: flex; }
+}
 .social-btn {
   width: 40px; height: 40px;
   border-radius: 50%;
