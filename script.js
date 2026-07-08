@@ -425,7 +425,7 @@ async function confirmBooking() {
       showBookingStep(4);
     } else {
       msgEl.className = "booking-msg error";
-      msgEl.textContent = "Щось пішло не так. Спробуйте ще раз.";
+      msgEl.textContent = "Помилка: " + (error.message || error.code || "невідома") + (error.details ? " (" + error.details + ")" : "");
       console.error(error);
     }
     return;
