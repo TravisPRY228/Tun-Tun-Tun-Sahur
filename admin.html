@@ -172,7 +172,9 @@
 <script>
   const SUPABASE_URL = "https://vsxjkesquejivthxxqip.supabase.co";
   const SUPABASE_ANON_KEY = "sb_publishable_AfHHxs19RkbGhEpflXzz8w_o31XTG99";
-  const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+    auth: { storageKey: "tuntuntun-admin-auth" }
+  });
 
   const STATUS_LABELS = { booked: "Заплановано", came: "Прийшов", no_show: "Не прийшов", cancelled: "Скасовано" };
   let currentFilter = "upcoming";

@@ -108,7 +108,9 @@ if (cursorDot && isFinePointer && !prefersReducedMotion) {
 
 const SUPABASE_URL = "https://vsxjkesquejivthxxqip.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_AfHHxs19RkbGhEpflXzz8w_o31XTG99";
-const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+  auth: { storageKey: "tuntuntun-public-auth" }
+});
 
 const SERVICES = [
   { id: "men", name: "Чоловіча стрижка", price: "450 грн", duration: "40 хв" },
